@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writally</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+
+    <img src="imagenes - copia/Nove.jpg" height="250" width="250" alt="writally Logo" class="centrar-imagen">
+    <p>🍃 Eco-Friendly | Innovadores | Sostenibles</p>
+</header>
+
+<section id="catalogo">
+    <h2>Producto</h2>
+    <div class="catalogo-contenedor">
+        <div class="producto">
+            <!-- Botón que abre el catálogo -->
+            <button class="producto-boton" onclick="verCatalogo()">Ver producto</button>
+            <p>🌿 ˚ ༘ ✎¡Escribe el cambio, deja una marca que florezca!</p>
+        </div>
+    </div>
+</section>
+
+<section id="nosotros">
+    <h2>Nosotros</h2>
+    <div class="nosotros-contenedor">
+        <p>En Writally, estamos comprometidos con la sostenibilidad y la innovación. Nuestro objetivo es ofrecer un producto ecológico que no solo cumple con los más altos estándares de calidad, sino que también contribuye a un futuro más verde. Creemos que cada acción cuenta, y es por eso que trabajamos arduamente para asegurar que nuestras práctica y producto sean lo más amigables posible con el medio ambiente.</p>
+        <p>Únete a nosotros en nuestra misión de crear un mundo más verde y sostenible. Juntos, podemos hacer la diferencia.</p>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contacto-contenedor">
+        <form id="contactForm">
+            <div class="contacto-campo">
+                <label for="nombre">Nombre:</label>
+                <div class="contacto-input">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+            </div>
+
+
+            <div class="contacto-campo">
+                <label for="mensaje">Mensaje:</label>
+                <div class="contacto-input">
+                    <i class="fa fa-pencil-alt"></i>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Tu mensaje"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Blossom. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Script para abrir el catálogo -->
+<script>
+    function verCatalogo() {
+        window.open('Catalogo.pdf', '_blank');
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const nombre = document.getElementById('nombre').value
+        const mensaje = document.getElementById('mensaje').value;
+
+        const numeroWhatsApp = '+573058553638'; // Cambia este número por el tuyo
+        const mensajeWhatsApp = `Hola, soy ${nombre}. ${mensaje}`;
+        const enlaceWhatsApp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensajeWhatsApp)}`;
+
+        window.open(enlaceWhatsApp, '_blank');
+    });
+</script>
+
+</body>
+</html>
+
