@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #FFFDF9; /* Blanco cálido */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #FFFDF9;
+    padding: 50px 20px;
+}
+.centrar-imagen {
+    display: block;
+    margin: 0 auto;
+}
+header p {
+    font-size: 1.5em;
+    color: #505C26; /* Verde oliva */
+    font-style: italic;
+}
+
+/* Sección de catálogo */
+#catalogo {
+    padding: 60px 20px;
+    background-color: #E9F1E6; /* Verde muy claro */
+    text-align: center;
+    border-bottom: 2px solid #E0E0E0; /* Línea sutil en la parte inferior */
+}
+
+#catalogo h2 {
+    font-size: 2.5em;
+    color: #505C26; /* Verde oliva */
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.catalogo-contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.producto {
+    background-color: #FFFDF9; /* Blanco cálido */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Botones del catálogo */
+.producto-boton {
+    background-color: #505C26; /* Verde oliva */
+    color: #FFFDF9; /* Blanco cálido */
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.3em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.4s, transform 0.3s;
+    box-shadow: 0 5px 15px rgba(80, 92, 38, 0.4); /* Verde oliva con opacidad */
+}
+
+.producto-boton:hover {
+    background-color: #3B4A1E; /* Un verde oliva más oscuro */
+    transform: scale(1.05);
+}
+
+/* Sección de nosotros */
+#nosotros {
+    padding: 60px 20px;
+    background-color: #FFFDF9; /* Blanco cálido */
+    text-align: center;
+}
+
+#nosotros h2 {
+    font-size: 2.5em;
+    color: #505C26; /* Verde oliva */
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.nosotros-contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 60px 20px;
+    background-color: #E9F1E6; /* Verde muy claro */
+    text-align: center;
+    border-top: 2px solid #E0E0E0; /* Línea sutil en la parte superior */
+}
+
+#contacto h2 {
+    font-size: 2.5em;
+    color: #505C26; /* Verde oliva */
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.contacto-contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFFDF9; /* Blanco cálido */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.contacto-campo {
+    margin-bottom: 20px;
+}
+
+.contacto-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #D0E0D0; /* Verde claro */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.contacto-input i {
+    padding: 15px;
+    color: #505C26; /* Verde oliva */
+    background-color: #E9F1E6; /* Verde muy claro */
+}
+
+.contacto-input input, .contacto-input textarea {
+    padding: 15px;
+    border: none;
+    flex: 1;
+    font-size: 1em;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.contacto-input input::placeholder, .contacto-input textarea::placeholder {
+    color: #888; 
